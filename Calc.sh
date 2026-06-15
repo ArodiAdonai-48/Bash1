@@ -11,32 +11,40 @@ display_menu() {
     echo "----------------------"
 }
 Add(){
-   read -p "Enter Your first number: " fnum
-   read -p "Enter Your Second Number: " snum
+   echo -n "Enter Your first number: " 
+   read fnum
+   echo -n "Enter Your Second Number: " 
+   read snum
    result=$(echo " $fnum + $snum " | bc)
-   echo " Result: $relult"
+   echo " Result: $result"
 
 }
 Subtract(){
-   read -p "Enter Your first number: " fnum
-   read -p "Enter Your Second Number: " snum
+   echo -n "Enter Your first number: " 
+   read fnum
+   echo -n "Enter Your Second Number: " 
+   read snum
    result=$(echo " $fnum - $snum " | bc)
-   echo " Result: $relult"
+   echo " Result: $result"
 }
 Multiply(){
-   read -p "Enter Your first number: " fnum
-   read -p "Enter Your Second Number: " snum
+   echo -n "Enter Your first number: " 
+   read fnum
+   echo -n "Enter Your Second Number: " 
+   read snum
    result=$(echo " $fnum * $snum " | bc)
-   echo " Result: $relult"
+   echo " Result: $result"
 }
 Divide(){
-  read -p "Enter Your first number: " fnum
-  read -p "Enter Your Second Number: " snum
+  echo -n "Enter Your first number: " 
+  read fnum
+  echo -n "Enter Your Second Number: "
+  read snum
   if [ "$snum" -eq 0 ]; then
 	echo "Error: division by zero is not allowed"
   else
-     result=$(echo " scale=2; $fnum/ $snum " | bc)
-     echo " Result: $relult"
+     result=$(echo " scale=2; $fnum/$snum " | bc)
+     echo " Result: $result"
    fi
 }
 while true
