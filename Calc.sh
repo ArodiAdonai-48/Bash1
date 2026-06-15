@@ -15,7 +15,7 @@ Add(){
    read fnum
    echo -n "Enter Your Second Number: " 
    read snum
-   result=$(echo " $fnum + $snum " |bc)
+   result=$(echo " $fnum + $snum " | bc)
    echo " Result: $result"
 
 }
@@ -24,7 +24,7 @@ Subtract(){
    read fnum
    echo -n "Enter Your Second Number: " 
    read snum
-   result=$(echo " $fnum - $snum " |bc)
+   result=$(echo " $fnum - $snum " | bc)
    echo " Result: $result"
 }
 Multiply(){
@@ -32,7 +32,7 @@ Multiply(){
    read fnum
    echo -n "Enter Your Second Number: " 
    read snum
-   result=$(echo " $fnum * $snum " |bc)
+   result=$(echo " $fnum * $snum " | bc)
    echo " Result: $result"
 }
 Divide(){
@@ -43,7 +43,7 @@ Divide(){
   if [ "$snum" -eq 0 ]; then
 	echo "Error: division by zero is not allowed"
   else
-     result=$(echo " scale=2; $fnum/$snum " |bc)
+     result=$(echo " scale=2; $fnum/$snum " | bc)
      echo " Result: $result"
    fi
 }
