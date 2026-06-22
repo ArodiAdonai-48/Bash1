@@ -65,3 +65,4 @@ do
 	
    esac
 done
+echo "Thanks for using this app"
